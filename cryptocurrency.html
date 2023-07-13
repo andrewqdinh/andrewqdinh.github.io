@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AQD Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Data Analysis Portfolio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links"><font size="4.5">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="amazon.html">Amazon Product Subcategories</a></li>
+								<li><a href="cryptocurrency.html">Historical Cryptocurrency Data</a></li>
+								<li><a href="electronics.html">Annual Electronic Sales</a></li>
+								<li><a href="movies.html">High-Budget Films</a></li>
+							</font></ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h2 class="major"><center>Historical Cryptocurrency Data</center></h2>
+
+									<!-- IMAGE BANNER -->
+									<span class="image main"><img src="images/crypto_ban3.jpg" alt="" /></span><hr>
+
+									<!-- OVERVIEW -->
+									<h3><u>Overview</u></h3>
+									<p><font size="4.5">This project compares the historical price, trading volume, and Google search trends of 20 popular cryptocurrency projects. The cryptocurrencies in this study include:</font></p>
+
+									<div style="float: left;width: 50%;">
+										<ul><font size="4.5">
+											<li>Bitcoin</li>
+											<li>Ethereum</li>
+											<li>Binance</li>
+											<li>Ripple</li>
+											<li>Cardano</li>
+											<li>Dogecoin</li>
+											<li>Solana</li>
+											<li>Polygon</li>
+											<li>Polkadot</li>
+											<li>Tron</li>
+										</font></ul>
+									</div>
+
+									<div style="float: right;width: 50%;">
+										<ul><font size="4.5">
+											<li>Avalanche</li>
+											<li>Chainlink</li>
+											<li>Cosmos</li>
+											<li>Uniswap</li>
+											<li>Filecoin</li>
+											<li>Hedera</li>
+											<li>Near Protocol</li>
+											<li>Quant Network</li>
+											<li>Algorand</li>
+											<li>The Graph</li>
+										</font></ul>
+									</div>
+
+									<p><font size="4.5">The goal of this project is to identify trends in the cryptocurrency market and to better understand the factors that drive price movements. The project will use data retrieved from two sources: historical price and trading volume from Yahoo Finance and web search interest from Google Trends. The results of the analysis will be used to create visualizations that illustrate the relationships between price, trading volume, and search interest. This information can be used to gain general knowledge and make informed decisions on the best times to buy.</font></p>
+
+
+									<!-- DATA SOURCES -->
+									<h3><u>Data Sources</u></h3>
+
+									<!-- Yahoo Finance -->
+									<p><font size="4.5">&rarr; <b>Yahoo Finance</b><br>
+									Historical price and volume data for the mentioned cryptocurrency projects was retrieved from Yahoo Finance, starting from the earliest available date and ending on May 7, 2023. Cryptocurrency markets are open 24/7, hence, data was retrieved for each day. The following metrics were collected:</font></p>
+
+									</p><ul><font size="4.5">
+											<li>Daily High -  The highest price reached during the trading day.</li>
+											<li>Daily Low -  The lowest price reached during the trading day.</li>
+											<li>Daily Average - The average price of the trading day.</li>
+											<li>Daily Volume - The total trading volume for the day.</li>
+									</font></ul>
+
+									<!--<p style="margin-left: 50px;"><font size="4.5">
+											● Daily High -  The highest price reached during the trading day.<br>
+											● Daily Low -  The lowest price reached during the trading day.<br>
+											● Daily Average - The average price of the trading day.<br>
+											● Daily Volume - The total trading volume for the day.
+									</font></p>-->
+
+									<p><font size="4.5">
+									Open and close prices were also collected, representing the price at 11:59 PM and midnight, respectively. However, these entries were omitted from the study, as cryptocurrency markets do not have traditional opening and closing hours.  </p>
+
+									<!-- Google Trends -->
+									<p>&rarr; <b>Google Trends</b><br>
+										Google search trends for the mentioned cryptocurrency projects were also recorded for this study. To ensure that the data was as accurate as possible, the same search format was used for each cryptocurrency. This included searching for the project name, the project's ticker symbol, and any other relevant keywords. Here are a few examples of what was input into Google Trends: 
+											<p><center>"Bitcoin cryptocurrency"+"Bitcoin crypto"+"BTC coin"+"BTC crypto"+"BTC cryptocurrency"</center></p>
+											<center>"Ethereum cryptocurrency"+"Ethereum crypto"+"ETH coin"+"ETH crypto"+"ETH cryptocurrency"</center>
+											<br><center>"Binance cryptocurrency"+"Binance crypto"+"BNB coin"+"BNB crypto"+"BNB cryptocurrency"</center><br></p>
+
+										<p>Bitcoin was laucned in January 2009. The Google Trends query for Bitcoin began on the 1st of January 2009 and ran until May 7, 2023. The query dates remained constant for each project, even though they were launched in different years. This was done to ensure that the data was comparable across all projects.For each cryptocurrency, two data files were retrieved from Google Trends: one for month-to-month search trends and the other for score by country. This allows us to see which projects were popular in any given year, as well as which countries favored specific projects.</p>
+
+										<p>Lastly, it is important to note that Google Trends does not provide absolute search volume. Rather, each month is given a score from 0 to 100, where a score of 100 indicates the day with the highest relative search volume. For the country data files, countries with a score of 100 had the most searches for the given project. Accordingly, each score is relative to 100: a score of 70 indicates a month or country with 30% less search volume than a month or country with a score of 100. It is important to keep this in mind when interpreting this data. </font></p>
+
+									<!-- DATA CLEANING -->
+									<h3><u>Data Cleaning & Modifications</u></h3>
+									<p><font size="4.5">The data for this project required minimal modification and cleaning.
+
+									<p>&rarr; <b>Yahoo Finance</b><br>
+										Historical price and volume data for each cryptocurrency in this study was retrieved separately. To view the data holistically, the data from each cryptocurrency was concatenated into a single table. Morever, a column was added to represent the corresponding ticker symbol. This was done to differentiate price and volume from one cryptocurrency to another. Columns representing open, close, and adjusted close prices were removed, as they were not relevant to this study. This is because cryptocurrency markets never close.
+
+									<p>&rarr; <b>Google Trends</b><br>
+										Google Trends history for each cryptocurrency in this project was retrieved separately. To view the data holistically, the data from each cryptocurrency was concatenated into a single table. Before doing so, a column was added to represent the corresponding ticker symbol. Again, this was done in order to differentiate Google Trends history from one cryptocurrency to another. For any given cryptocurrency, there are several months in which the score was less than 1 out of 100. These scores are represented as "<1". This is an issue because it is not of integer value, which prevents data visualizations from being created. Therefore, any month with a score of "<1" was replaced with "0.5".
+									</font></p>
+								</div>
+							</div>
+					</section>
+
+					<center><iframe width="1900" height="850" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=BCA1946A8244A757%21179&authkey=!ANG95hP1Nnl1u-A&em=2&ActiveCell='dashboard'!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&ed1JS=false"></iframe></center>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							
+							<h2 class="major"><center>Get in touch</center></h2>
+							<p><font size="4.5"><center>To whom it may concern, I have provided my contact information below. Please, feel free to contact me at any time. I look forward to speaking with you.<br>
+
+								<br><b>Mobile Phone:</b>
+								<br>(626) 588-7413<br>
+
+								<br><b>Email:</b>
+								<br>aqdinh99@gmail.com</a></font></center>
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

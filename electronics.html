@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AQD Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Data Analysis Portfolio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links"><font size="4.5">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="amazon.html">Amazon Product Subcategories</a></li>
+								<li><a href="cryptocurrency.html">Historical Cryptocurrency Data</a></li>
+								<li><a href="electronics.html">Annual Electronic Sales</a></li>
+								<li><a href="movies.html">High-Budget Films</a></li>
+							</font></ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h2 class="major"><center>Annual Electronic Sales</center></h2>
+
+									<!-- IMAGE BANNER -->
+									<span class="image main"><img src="images/electronics_ban2.jpg" alt="" /></span><hr>
+
+									<!-- OVERVIEW -->
+									<h3><u>Overview</u></h3>
+									<p><font size="4.5">
+										This study analyzes the sales performance of an electronics company over a single year. The purpose of this analysis is to identify trends in sales performance and areas for improvement. The following information will be considered:
+									</font></p>
+
+
+									</p><ul><font size="4.5">
+											<li>Products - Which products are selling the most? What are the top-selling products by category?</li>
+											<li>Revenue - What is the total revenue for the year? What is the quarterly revenue?</li>
+											<li>Geography - Which states are the top consumers? What are the top-selling states by category?</li>
+											<li>Days and months - Which days and months have the most sales transactions?</li>
+									</font></ul>
+
+									<!--<p style="margin-left: 50px;"><font size="4.5">
+											● Products - Which products are selling the most? What are the top-selling products by category?<br>
+											● Revenue - What is the total revenue for the year? What is the quarterly revenue?<br>
+											● States - Which states are the top consumers? What are the top-selling states by category?<br>
+											● Days and months - Which days and months have the most sales transactions?
+									</font></p>-->
+										
+									<p><font size="4.5">
+										By interpreting the results of this project, recommendations can be made to improve future sales strategies. For instance, if a particular product is consistently selling well, the company may want to increase its marketing efforts for that product. If a particular state is not a top consumer, the company may want to explore ways to reach more customers in that state. By understanding the trends in sales performance, the company can make informed decisions about how to improve in the future.
+
+									</font></p>
+
+									<!-- DATA SOURCES -->
+									<h3><u>Data Sources</u></h3>
+
+									<p><font size="4.5">
+										The data retrieved for this study was collected from Kaggle, a website where users can share and collaborate on datasets. Although the original source of the data is unknown, Kaggle has given this dataset a usability score of 10 out of 10. This score is determined by the datasets completeness, credibility, and compatibility, all of which scored 100%. Moreover, the logic and methodology behind this analysis can be applied to any sales performance data. The data columns provided include:
+									</font></p>
+
+									</p><ul><font size="4.5">
+											<li>Order ID - A unique number assigned to each order for systematic tracking and information retrieval.</li>
+											<li>Product - The product(s) that were ordered.</li>
+											<li>Quantity Ordered - The number of units of each product that were ordered.</li>
+											<li>Price Each - The price per unit of each product.</li>
+											<li>Order Date - The date on which the order was placed.</li>
+											<li>Purchase Address - The address to which the order will be shipped.</li>
+									</font></ul>
+
+									<!--<p style="margin-left: 50px;"><font size="4.5">
+											● Order ID - A unique number assigned to each order for systematic tracking and information retrieval.<br>
+											● Product - The product(s) that were ordered.<br>
+											● Quantity Ordered - The number of units of each product that were ordered.<br>
+											● Price Each - The price per unit of each product.<br>
+											● Order Date - The date on which the order was placed.<br>
+											● Purchase Address - The address to which the order will be shipped.
+									</font></p>-->
+
+									<!-- DATA CLEANING -->
+									<h3><u>Data Cleaning & Modifications</u></h3>
+									<p><font size="4.5">The data provided from Kaggle was originally presented in 12 separate files, one for each month of the year. The first step in processing the data was to concatenate all of the files into a single file. This resulted in a dataset of 185,950 entries, each representing the purchase of a specific product. Moreover, the data was free of errors, so no cleaning was required.
+									</font></p>
+
+									<p><font size="4.5">To improve the accuracy of data interpretations, several data columns were split into smaller units. The order dates were used to extract the day of the week, day of the month, and time. These were stored in separate columns. To make the data more concise, the weekday and month columns were further split into abbreviations. For example, Monday was displayed as "Mon" and April was displayed as "Apr". Finally, the purchase address was split into city and state columns. These columns were then concatenated so that each purchase address could be represented by its corresponding city and state. For example, 944 Walnut St, Boston, MA 02215 was displayed as "Boston, MA". Finally, a single column was added to our data to account for product categories. This would allow us to see how different product types are performing against each other.
+									</font></p>
+								</div>
+							</div>
+					</section>
+
+					<iframe width="1900" height="850" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=BCA1946A8244A757%21182&authkey=!ADL_7dWyyTPu1R8&em=2&ActiveCell='dashboard'!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&ed1JS=false"></iframe>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							
+							<h2 class="major"><center>Get in touch</center></h2>
+							<p><font size="4.5"><center>To whom it may concern, I have provided my contact information below. Please, feel free to contact me at any time. I look forward to speaking with you.<br>
+
+								<br><b>Mobile Phone:</b>
+								<br>(626) 588-7413<br>
+
+								<br><b>Email:</b>
+								<br>aqdinh99@gmail.com</a></font></center>
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AQD Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Data Analysis Portfolio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links"><font size="4.5">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="amazon.html">Amazon Product Subcategories</a></li>
+								<li><a href="cryptocurrency.html">Historical Cryptocurrency Data</a></li>
+								<li><a href="electronics.html">Annual Electronic Sales</a></li>
+								<li><a href="movies.html">High-Budget Films</a></li>
+							</font></ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h2 class="major"><center>Amazon Product Subcategories</center></h2>
+
+									<!-- IMAGE BANNER -->
+									<span class="image main"><img src="images/amazon_ban.jpg" alt="" /></span><hr>
+
+									<!-- OVERVIEW -->
+									<h3><u>Overview</u></h3>
+									<p><font size="4.5">This project compares Amazon subcategories based on the number of ratings and the rating itself. The list of subcategories at the beginning of the study include:
+									</font></p>
+
+									<div style="float: left;width: 50%;">
+										<ul><font size="4.5">
+											<li>Dog Supplies</li>
+											<li>Baby Products</li>
+											<li>Home & Kitchen</li>
+											<li>Amazon Fashion</li>
+											<li>Kitchen & Dining</li>
+											<li>Camping & Hiking</li>
+											<li>Fitness Accessories</li>
+											<li>Baby Bath, Skin, Grooming</li>
+											<li>Kitchen & Home Appliances</li>
+											
+										</font></ul>
+									</div>
+
+									<div style="float: right;width: 50%;">
+										<ul><font size="4.5">
+											<li>Backpacks</li>
+											<li>Car Electronics</li>
+											<li>All Pet Supplies</li>
+											<li>Strength Training</li>
+											<li>Travel Accessories</li>
+											<li>Garden & Outdoors</li>
+											<li>Camera Accessories</li>
+											<li>Sports, Fitness, Outdoors</li>
+											<li>Kitchen Storage & Containers</li>
+										</font></ul>
+									</div>
+
+									<p><font size="4.5"> The goal of this study was to identify subcategories that are not overly saturated. These subcategories would provide new sellers with the best chance for success. Once identified, products were singled out to determine which were performing well but still have room for growth and improvement. These are the products that have the potential to become bestsellers, and they are the ones that new sellers should target or draw inspiration from. The analysis was conducted in three stages, where each stage filtered out subcategories that did not meet specific criteria. The criteria to be met for each stage are as follows:</font></p>
+
+										<DL><font size="4.5">
+										<DT>Stage I
+											<DD> ➥ A total subcategory rating count of 500,000 or less.
+										<DT>Stage II
+											<DD>➥ For this stage, either of 2 criteria are to be met:
+											<DD>➥ Subcategories with products that have received no more than 20,000 ratings.
+											<DD>➥ Subcategories with a product count of less than 500, where each product has at most 250 ratings.
+										<DT>Stage III
+											<DD>➥ This stage is a point of reference for each seller to identify the top 20 products by subcategory.
+										</font></DL>
+
+									<!-- <p style="margin-left: 50px;"><font size="4.5">
+											● Stage 1: A total subcategory rating count of 500,000 or less.<br>
+											● Stage 2: For this stage, either of 2 criteria are to be met.<br>
+											➥ Subcategories with products that have received no more than 20,000 ratings.<br>
+											➥ Subcategories with a product count of less than 500, where each product has at most 250 ratings.<br>
+											● Stage 3: This stage is a point of reference for each seller to identify the top 20 products by subcategory.
+									</font></p> -->
+
+									<!-- DATA SOURCES -->
+									<h3><u>Data Sources</u></h3>
+
+									<p><font size="4.5">The data used for this study was collected from Kaggle, a website where users can share and collaborate on datasets. The original data was scraped from Amazon's website by the publishing user, who retrieved each of the data columns for every offered subcategory. I hand-selected which subcategories to include in the study. For each subcategory, the following information was retrieved, denoted by column headers:</font>
+
+									</p><ul><font size="4.5">
+											<li>Name - The name of the product.</li>
+											<li>Main Category - The main category of the product.</li>
+											<li>Subcategory - The subcategory of the product.</li>
+											<li>Image - A link to the product image.</li>
+											<li>Link - A link to the product page.</li>
+											<li>Rating - The average rating of the product.</li>
+											<li>Rating Count - The number of ratings the product has received.</li>
+											<li>Discount Price - The price of the product after a discount.</li>
+											<li>Actual Price - The original price of the product.</li>
+									</font></ul>
+
+									<!--<p style="margin-left: 50px;"><font size="4.5">
+										● Name - The name of the product.<br>
+										● Main Category - The main category of the product.<br>
+										● Subcategory - The subcategory of the product.<br>
+										● Image - A link to the product image.<br>
+										● Link - A link to the product page.<br>
+										● Rating - The average rating of the product.<br>
+										● Rating Count - The number of ratings the product has received.<br>
+										● Discount Price - The price of the product after a discount.<br>
+										● Actual Price - The original price of the product.</font></p> -->
+
+									<p><font size="4.5">It is important to note that the person responsible for this dataset resides in India. As a result, the product links are presented in Indian rupees. This also applies to the Discount Price and Actual Price columns. While a dataset denoted in US dollars would be preferable, no other Kaggle dataset of this size was available.
+									</font></p>
+
+									<!-- DATA CLEANING -->
+									<h3><u>Data Cleaning & Modifications</u></h3>
+
+									<p><font size="4.5"> The data provided from Kaggle was originally presented in multiple files. The first step was to concatenate all of the files into a single file. This resulted in a dataset of 39,504 entries. The next step was to remove each invalid entry, which yielded a clean dataset of 29,924 entries. In order to clean the data, several tasks were completed:</font></p>
+
+									<OL><font size="4.5">
+										<LI>Removal of duplicate entries
+											<UL>
+											<LI>Entries with identical column values were removed.</LI>
+											</UL>
+										<LI>Removal of entries with missing data
+											<UL>
+											<LI>Entries with blank column values were removed.</LI>
+											</UL>
+										<LI>Removal of entries with incorrect data
+											<UL>
+											<LI>Rating entries not between 0 and 5 were removed.</LI>
+											<LI>Number of Ratings entries not denoted by whole number values were removed.</LI>
+											</UL>
+										<LI>Removal of incorrect rupee sign
+											<UL>
+											<LI>Data entries of monetary value are denoted with " â‚¹ " instead of " ₹ ", the symbol for Indian rupees. Hence, the characters were removed.</LI>
+											</UL>
+										<LI><font size="4.5">Conversion of Indian rupees to US dollars
+											<UL>
+											<LI>The discount price and actual price columns were multiplied by 0.012126.</LI>
+											</UL>
+									</font></OL>
+
+									<!--<p style="margin-left: 50px;"><font size="4.5">
+										1. Removal of duplicate entries<br>
+										➥ Entries with identical column values were removed.<br>
+										2. Removal of entries with missing data<br>
+										➥ Entries with blank column values were removed.<br>
+										3. Removal of entries with incorrect data<br>
+										➥ Rating entries not between 0 and 5 were removed.<br>
+										➥ Number of Ratings entries not denoted by whole number values were removed.<br>
+										4. Removal of incorrect rupee sign<br>
+										➥ Data entries of monetary value are denoted with " â‚¹ " instead of " ₹ ", the symbol for Indian rupees. Hence, the characters were removed.<br> 
+										5. Conversion of Indian rupees to US dollars<br>
+										➥ The discount price and actual price columns were multiplied by 0.012126.
+									</font></p>-->
+
+								</div>
+							</div>
+					</section>
+
+					<center><iframe width="1900" height="850" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=BCA1946A8244A757%21180&authkey=!AOQjNmJa1-CjKIc&em=2&ActiveCell='dashboard'!A1&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=US1&ed1JS=False"></iframe></center>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							
+							<h2 class="major"><center>Get in touch</center></h2>
+							<p><font size="4.5"><center>To whom it may concern, I have provided my contact information below. Please, feel free to contact me at any time. I look forward to speaking with you.<br>
+
+								<br><b>Mobile Phone:</b>
+								<br>(626) 588-7413<br>
+
+								<br><b>Email:</b>
+								<br>aqdinh99@gmail.com</a></font></center>
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

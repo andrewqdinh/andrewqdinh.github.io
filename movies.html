@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AQD Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Data Analysis Portfolio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links"><font size="4.5">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="amazon.html">Amazon Product Subcategories</a></li>
+								<li><a href="cryptocurrency.html">Historical Cryptocurrency Data</a></li>
+								<li><a href="electronics.html">Annual Electronic Sales</a></li>
+								<li><a href="movies.html">High-Budget Films</a></li>
+							</font></ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h2 class="major"><center>High-Budget Films</center></h2>
+
+									<!-- IMAGE BANNER -->
+									<span class="image main"><img src="images/movies_ban.jpg" alt="" /></span><hr>
+
+									<!-- OVERVIEW -->
+									<h3>Overview</h3>
+									<p><font size="4.5">This project compares the most expensive movies of all time based on six metrics: production budget, domestic gross, worldwide gross, total profit, return on investment, and release date. From a list of 1,000 movies, the top 20 movies for each metric are identified and compared side-by-side. For each film in the top 20, we also compare genre and film ratings as these are not provided in the original dataset.</p>
+
+									<p><font size="4.5">The goal of this study is to identify the most expensive movie types to produce, the genres that perform best, and any similarities between the top-grossing movies. This information can be used to spot trends in the film industry. For example, we can determine if there is a positive correlation between production budget and worldwide gross, track how production budgets have been increasing over time, and recommend filmmakers to focus on genres with a high return on investment.</p>
+
+									<!-- DATA SOURCES -->
+									<h3>Data Sources</h3>
+
+									<p><font size="4.5">The data used for this study was collected from The Numbers, a film-industry data website that tracks box office revenue. The website is able to provide data on 6,400 movies with the highest production budgets. However, only the top 1,000 movies with the highest production budgets were used in this study. The data was retrieved using Microsoft Excel's built-in web scraping functionality to import every data column provided.</font></p>
+
+									<!-- DATA CLEANING -->
+									<h3>Data Cleaning & Modifications</h3>
+
+									<p><font size="4.5">The data retrieved from The Numbers was clean and free of errors. However, it is important to note that not all metric data for each movie is made public. In these cases, The Numbers defaults to $0 for any film without publicly available sales data. Additionally, the list of films includes those with the highest production budgets, even if they have not yet been released. For instance, Mission: Impossible Dead Reckoning is the 11th most expensive film, but it is not scheduled to be released until June 19, 2023. For this study, we are comparing movies based on all of the provided metrics. Therefore, any entries with missing data or unreleased films have been removed from the dataset.<br><br>
+
+									The data retrieved from The Numbers website did not include film genres or ratings. This is unfortunate, as this information could be used to compare the top-performing films. As a result, I retrieved the genre and rating for the top 20 films in each metric (production budget, worldwide gross, domestic gross, return on investment, and total profit). While it would have been ideal to have this data for all films, it would have been too time-consuming and tedious to collect. </font></p>
+								</div>
+							</div>
+					</section>
+
+					<center><iframe width="1900" height="850" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=BCA1946A8244A757%21181&authkey=!AM6mYdiAadH1fOk&em=2&ActiveCell='dashboard'!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&ed1JS=false"></iframe></center>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							
+							<h2 class="major"><center>Get in touch</center></h2>
+							<p><font size="4.5"><center>To whom it may concern, I have provided my contact information below. Please, feel free to contact me at any time. I look forward to speaking with you.<br>
+
+								<br><b>Mobile Phone:</b>
+								<br>(626) 588-7413<br>
+
+								<br><b>Email:</b>
+								<br>aqdinh99@gmail.com</a></font></center>
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
